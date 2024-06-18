@@ -15,14 +15,25 @@
     <form action ="https://www.amazon.it/mieidati" method="get"> 
         <div class="form-group">
           <label for="InputCognome">Cognome</label>
-          <input name = "vCognome" type="text" class="form-control" id="InputCognome" aria-describedby="CognomeHelp" placeholder="Inserisci il tuo Cognome"required minlength="2" pattern="[a-zA-Z]+[ ]?+[a-zA-Z]*">
+          <input name = "vCognome" type="text" class="form-control" id="InputCognome" aria-describedby="CognomeHelp" placeholder="Inserisci il tuo Cognome"required minlength="2" pattern="[a-zA-Z]+[ ]?[a-zA-Z]*">
           <small id="cognomeHelp" class="form-text text-muted">inserisci qui il tuo cognome.</small>
         </div>
         <div class="form-group">
           <label for="InputNome">Nome</label>
-          <input name = "vNome" type="text" class="form-control" id="InputNome" aria-describedby="NomeHelp" placeholder="Inserisci il tuo Nome" required minlength="2"pattern="[a-zA-Z]+[ ]?+[a-zA-Z]*">
+          <input name = "vNome" type="text" class="form-control" id="InputNome" aria-describedby="NomeHelp" placeholder="Inserisci il tuo Nome" required minlength="2"pattern="[a-zA-Z]+[ ]?[a-zA-Z]*">
           <small id="nomeHelp" class="form-text text-muted">inserisci qui il tuo Nome.</small>
         </div>
+        <div class="form-group">
+          <label for="InputIstruzione">livello d'istruzione</label>
+          <select name="vIstru" class="form-control" id="InputIstruzione">
+            <option value="0">Nessuno</option>
+            <option value="1">Elementare</option>
+            <option value="2">Superiore</option>
+            <option value="3">Laura</option>
+            <option value="4">Post Laura</option>
+          </select>
+        </div>
+        <div class="form-group">
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
