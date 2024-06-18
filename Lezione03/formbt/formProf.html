@@ -12,6 +12,23 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
+    <form action ="https://www.amazon.it/mieidati" method="get"> 
+        <div class="form-group">
+          <label for="InputCognome">Cognome</label>
+          <input name = "vCognome" type="text" class="form-control" id="InputCognome" aria-describedby="CognomeHelp" placeholder="Inserisci il tuo Cognome"required minlength="2" pattern="[a-zA-Z]+[ ]{0-1}+[a-zA-Z]*">
+          <small id="cognomeHelp" class="form-text text-muted">inserisci qui il tuo cognome.</small>
+        </div>
+        <div class="form-group">
+          <label for="InputNome">Nome</label>
+          <input name = "vNome" type="text" class="form-control" id="InputNome" aria-describedby="NomeHelp" placeholder="Inserisci il tuo Nome" required minlength="2"pattern="[a-zA-Z]+[ ]{0-1}+[a-zA-Z]*">
+          <small id="nomeHelp" class="form-text text-muted">inserisci qui il tuo Nome.</small>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
