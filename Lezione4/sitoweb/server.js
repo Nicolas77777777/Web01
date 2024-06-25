@@ -16,3 +16,9 @@ app.get('', (req, res) => {
 console.log("Mi hai chiesto la pagina iniziale");
 res.sendFile("index.html", { root: './htdocs' });
 });
+
+//SECONDA ROUTE
+app.get('', (req, res) => {
+    console.log("Mi hai chiesto la pagina registrazione");
+    res.sendFile("Registrati.html", { root: './htdocs' });
+    });
