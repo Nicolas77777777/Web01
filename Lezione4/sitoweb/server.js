@@ -8,8 +8,8 @@ var iPortaTcp = 4201;
 var sIpAddress = "127.0.0.1"
 
 app.listen(iPortaTcp,sIpAddress, () => console.log('API is running on http://' + sIpAddress + ':' + iPortaTcp));
-//const bodyParser = require('body-parser');
-//app.use(bodyParser.urlencoded({ extended: true }));
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
 
 //PRIMA ROUTE
 app.get('', (req, res) => {
@@ -18,13 +18,19 @@ res.sendFile("index.html", { root: './htdocs' });
 });
 
 //SECONDA ROUTE
-app.get('', (req, res) => {
+app.get('/registrazione', (req, res) => {
     console.log("Mi hai chiesto la pagina registrazione");
-    res.sendFile("Registrati.html", { root: './htdocs' });
+    res.sendFile("registrazione.html", { root: './htdocs' });
     });
 
 //TERZA ROUTE
-app.get('', (req, res) => {
-    console.log("Mi hai chiesto la pagina registrazione");
-    res.sendFile("Registrati.html", { root: './htdocs' });
+app.get('/accedi', (req, res) => {
+    console.log("Mi hai chiesto la pagina accedi");
+    res.sendFile("accedi.html", { root: './htdocs' });
+    });
+
+//Formroute
+app.get('/gestisciDatiForm', (req, res) => {
+    console.log("Mi hai chiesto la pagina della form");
+    res.send("<html><body>Ciao " + req.query.fname +"</body></html>")
     });
