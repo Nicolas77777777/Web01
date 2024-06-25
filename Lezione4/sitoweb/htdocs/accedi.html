@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Esempio di pagina web con un form</title>
+  </head>
+
+  <body>
+      <h1>Esempio di pagina web con un form</h1>
+
+      <form action="https://liceocuneo.it/script/register.jsp" method="get">
+
+      <fieldset>
+        <legend>Dati anagrafici</legend>
+        Inserisci qui il tuo nome <input type="text" name="nome" /><br />
+        Inserisci qui il tuo cognome <input type="text" name="cognome" /><br />
+
+        Sesso: <input type="radio" name="sesso" value="maschio" />maschio
+        <input type="radio" name="sesso" value="femmina" />femmina<br />
+
+        Luogo di nascita <input type="text" name="luogo" /><br/>
+        Data di nascita <input type="date" name="data" /><br/>
+      </fieldset> 
+
+      <fieldset>
+        <legend>Password personale</legend>
+        Inserisci la password <input type="password" name="password" /><br />
+      </fieldset> 
+
+      <fieldset>
+        <legend>Dati personali</legend>
+        Patente <input type="checkbox" name="auto" />auto 
+        <input type="checkbox" name="moto" />moto 
+        <input type="checkbox" name="aereo" />aereo<br />
+
+        Classe <select name="classe">
+          <option value="xx">Seleziona la classe</option>
+          <option value="1a">Classe 1ªA</option>
+          <option value="1b">Classe 1ªB</option>
+          <option value="1c">Classe 1ªC</option>
+          <option value="1d">Classe 1ªD</option>
+          <option value="1e">Classe 1ªE</option>
+          <option value="1f">Classe 1ªF</option>
+          <option value="1g">Classe 1ªG</option>
+          <option value="1h">Classe 1ªH</option>
+          <option value="1i">Classe 1ªI</option>
+        </select><br />
+
+        <textarea name="commento" cols="40" rows="20">Inserisci qui i tuoi commenti</textarea><br />
+      </fieldset> 
+
+      <input type="button" value="Saluta" onClick="alert('Ciao!');" />
+      <input type="submit" value="Invia" />
+      <input type="reset" value="Cancella" />
+    </form>
+
+  </body>
+
+</html>
