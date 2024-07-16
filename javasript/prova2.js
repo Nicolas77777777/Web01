@@ -5,3 +5,34 @@ B = "buongiorno a lor signori";
 console.log("Il tipo della var A e' " + typeof(A) + "\n");
 console.log("Il tipo della var B e' " + typeof (B) + "\n");
 
+
+var C;
+C = 4;
+console.log("Il tipo della var C e' " + typeof(C) + "\n");
+
+C = " PORCO IL CLERO "
+
+console.log("Il tipo della var C e' " + typeof(C) + "\n");
+
+
+var iPosizione;
+var sMiaStringa;
+sMiaStringa = "zozzoneDavide"
+iPosizione = sMiaStringa.indexOf("z");
+if((iPosizione == -1) || (iPosizione > 3))
+						console.log("La z non c'e' nei primi 4 caratteri")
+else
+	console.log("La z c'e' nei primi 4 caratteri");
+
+var iPosition;
+var sMyStringa;
+
+sMyStringa = " vaffanculo"
+iPosition = sMyStringa.indexOf("f")
+
+if (iPosition >= 0) 
+                        console.log(" v c'è")
+else
+    console.log(" V nun c'è  ")
+
+
