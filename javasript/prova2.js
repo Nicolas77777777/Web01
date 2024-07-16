@@ -36,3 +36,40 @@ else
     console.log(" V nun c'è  ")
 
 
+function terminaconLettera(sStringa, sTermine)
+{
+    len = sStringa.lenght;
+    iPosition = sStringa.indexOf(sTermine, len -1)
+    if (iPosition>= 0)
+
+        return 1
+    else
+        return 0
+
+}
+
+
+bRet = terminaconLettera("paperino", "u")
+if (bRet ==1)
+    console.log("paperino" + "termina con"+ "u")
+
+else
+    console.log("paperino" + " NON termina con" + "u")
+
+
+function Macchinetta (iSoldi,sCodiceprodotto)
+    {
+        if sCodiceprodotto == "31"
+
+        {
+            if (iSoldi < 1)
+                return{null, iSoldi};
+
+            if (iSoldi ==1)
+                return {CocaCola, 0};
+            if (iSoldi > 1)
+                return {CocaCola, iSoldi -1};
+        }
+
+
+    }
